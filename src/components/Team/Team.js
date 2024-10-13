@@ -18,19 +18,19 @@ const Team = () => {
       </h2>
 
       {/* Team Members Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+      <div className="grid grid-cols-1 gap-8 px-6 place-items-center">
         {/* Team Member 1 */}
         <div
-          className="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+          className="w-5/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
           data-aos="fade-up"
         >
           <img
-            src="/images/team1.jpg"
-            alt="John Doe"
+            src="/images/sriragh.jpg"
+            alt="Yaswanth Sriragh"
             className="rounded-full w-32 h-32 mx-auto mb-4 shadow-lg"
           />
-          <h3 className="text-xl font-bold">John Doe</h3>
-          <p className="text-tangering">Co-Founder & CEO</p>
+          <h3 className="text-xl font-bold">Yaswanth Sriragh</h3>
+          <p className="text-tangering">Founder</p>
           <p className="mt-2 text-gray-600">
             Experienced in scaling education platforms, John drives TOTLE’s strategic vision.
           </p>
@@ -49,12 +49,12 @@ const Team = () => {
         </div>
 
         {/* Team Member 2 */}
-        <div
+        {/* <div
           className="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
           data-aos="fade-up"
           data-aos-delay="200"
-        >
-          <img
+        > */}
+          {/* <img
             src="/images/team2.jpg"
             alt="Jane Smith"
             className="rounded-full w-32 h-32 mx-auto mb-4 shadow-lg"
@@ -63,9 +63,9 @@ const Team = () => {
           <p className="text-blue-500">CTO</p>
           <p className="mt-2 text-gray-600">
             Jane leads our tech initiatives, with expertise in AI and machine learning.
-          </p>
+          </p> */}
           {/* Social Media Links */}
-          <div className="flex justify-center mt-4 space-x-4">
+          {/* <div className="flex justify-center mt-4 space-x-4">
             <a href="https://linkedin.com" className="text-gray-700 hover:text-blue-500 transition">
               <FaLinkedin size={24} />
             </a>
@@ -75,16 +75,16 @@ const Team = () => {
             <a href="mailto:jane@totle.com" className="text-gray-700 hover:text-red-500 transition">
               <FaEnvelope size={24} />
             </a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         {/* Team Member 3 */}
-        <div
+        {/* <div
           className="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
           data-aos="fade-up"
           data-aos-delay="400"
-        >
-          <img
+        > */}
+          {/* <img
             src="/images/team3.jpg"
             alt="Mark Taylor"
             className="rounded-full w-32 h-32 mx-auto mb-4 shadow-lg"
@@ -93,9 +93,9 @@ const Team = () => {
           <p className="text-green-500">Lead Developer</p>
           <p className="mt-2 text-gray-600">
             A full-stack developer, Mark is an expert in scalable systems and platform architecture.
-          </p>
+          </p> */}
           {/* Social Media Links */}
-          <div className="flex justify-center mt-4 space-x-4">
+          {/* <div className="flex justify-center mt-4 space-x-4">
             <a href="https://linkedin.com" className="text-gray-700 hover:text-blue-500 transition">
               <FaLinkedin size={24} />
             </a>
@@ -105,8 +105,8 @@ const Team = () => {
             <a href="mailto:mark@totle.com" className="text-gray-700 hover:text-red-500 transition">
               <FaEnvelope size={24} />
             </a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
 
       {/* Advisors Section */}
