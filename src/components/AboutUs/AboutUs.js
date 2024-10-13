@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero-bg bg-cover bg-center relative min-h-screen flex items-center justify-center parallax" style={{ backgroundImage: `url('/images/about-us-hero.jpg')` }}>
+      <section className="hero-bg bg-cover bg-center relative min-h-screen flex items-center justify-center parallax" style={{ backgroundImage: `url('/images/about-us.jpg')` }}>
         <div className="overlay bg-black bg-opacity-50 absolute inset-0"></div>
         <div className="text-center relative z-10" data-aos="fade-up">
           <h1 className="text-6xl font-extrabold text-white">About TOTLE</h1>
