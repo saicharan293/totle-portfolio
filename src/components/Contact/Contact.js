@@ -35,7 +35,7 @@ const Contact = () => {
       });
       setTimeout(() => {
         setSubmitted(false);
-      }, 3000);
+      }, 5000);
     } catch (error) {
       console.error("Error submitting the form", error);
     } finally {
@@ -51,7 +51,7 @@ const Contact = () => {
         {/* Display success message after form submission */}
         {submitted ? (
           <div className="bg-green-500 text-white p-4 rounded-md">
-            <p>Your message has been sent successfully!</p>
+            <p>We received your message, Our team will get in touch with you shortly!</p>
           </div>
         ) : (
           <form
