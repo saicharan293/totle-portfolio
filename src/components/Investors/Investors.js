@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos'; // for scroll animations
 import 'aos/dist/aos.css';
+import { FaUsers, FaHandshake, FaLaptopCode } from 'react-icons/fa'; // Icons
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { NavLink } from 'react-router-dom';
 
 const Investors = () => {
   useEffect(() => {
@@ -10,7 +13,7 @@ const Investors = () => {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-20 text-center">
+    <section className="bg-gray-100 pt-20 text-center">
       {/* Main Header */}
       <h2 className="text-4xl font-bold pt-10 mb-12" data-aos="fade-up">Invest in TOTLE</h2>
 
@@ -98,8 +101,68 @@ const Investors = () => {
         </div>
       </section>
 
+       {/* Impact Goals */}
+      <section className="pb-14 bg-white">
+          <h2 className="text-4xl font-semibold text-gray-800 dark:text-white mb-12" data-aos="fade-up" data-aos-delay="400">Our Impact Goals</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* User Growth Progress */}
+            <div className="flex flex-col items-center group" data-aos="fade-up" data-aos-delay="500">
+              <FaUsers className="text-4xl text-tangering mb-4 transition-transform duration-300 group-hover:scale-110" />
+              <div className="w-32 h-32">
+                <CircularProgressbar
+                  value={70}
+                  text={`70%`}
+                  styles={buildStyles({
+                    pathColor: "#FF7043",
+                    textColor: "#FF7043",
+                    trailColor: "#eee",
+                  })}
+                />
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mt-4">User Growth</p>
+              <p className="text-gray-500 dark:text-gray-400 mt-2">70% of target reached</p>
+            </div>
+
+            {/* Partnerships Progress */}
+            <div className="flex flex-col items-center group" data-aos="fade-up" data-aos-delay="600">
+              <FaHandshake className="text-4xl text-blue-500 mb-4 transition-transform duration-300 group-hover:scale-110" />
+              <div className="w-32 h-32">
+                <CircularProgressbar
+                  value={50}
+                  text={`50%`}
+                  styles={buildStyles({
+                    pathColor: "#4299E1",
+                    textColor: "#4299E1",
+                    trailColor: "#eee",
+                  })}
+                />
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mt-4">Partnerships Secured</p>
+              <p className="text-gray-500 dark:text-gray-400 mt-2">50% of goal achieved</p>
+            </div>
+
+            {/* Product Development Progress */}
+            <div className="flex flex-col items-center group" data-aos="fade-up" data-aos-delay="700">
+              <FaLaptopCode className="text-4xl text-green-500 mb-4 transition-transform duration-300 group-hover:scale-110" />
+              <div className="w-32 h-32">
+                <CircularProgressbar
+                  value={85}
+                  text={`85%`}
+                  styles={buildStyles({
+                    pathColor: "#48BB78",
+                    textColor: "#48BB78",
+                    trailColor: "#eee",
+                  })}
+                />
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mt-4">Product Development</p>
+              <p className="text-gray-500 dark:text-gray-400 mt-2">85% of product ready</p>
+            </div>
+          </div>
+        </section>
       {/* Get in Touch Section */}
-      <section className="py-20 bg-gray-100 text-center">
+      <section className="py-14 bg-gray-100 text-center">
         <h3 className="text-3xl font-semibold mb-6 text-tangering" data-aos="fade-up">Get in Touch</h3>
         <p className="text-lg text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
           Interested in learning more about TOTLE and exploring potential investment opportunities? Reach out to us by filling in the form below or contacting us directly.
@@ -137,6 +200,13 @@ const Investors = () => {
           </button>
         </form>
       </section>
+      <footer className="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+        <div className="mt-4 flex justify-center space-x-6">
+          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+        </div>
+      </footer>
     </section>
   );
 };

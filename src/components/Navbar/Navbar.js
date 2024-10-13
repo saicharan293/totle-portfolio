@@ -56,8 +56,13 @@ const Navbar = () => {
           <NavLink to="/about" onClick={handleLinkClick} className={({ isActive }) =>`transition-all duration-300 dark:text-white hover:text-tangering ${ isActive ? 'text-tangering' : isScrolled ? 'text-gray-700' : 'text-gray-400' }`}>
             About Us
           </NavLink>
-          <NavLink to="/vision" onClick={handleLinkClick} className={({ isActive }) =>`transition-all duration-300 dark:text-white hover:text-tangering ${ isActive ? 'text-tangering' : isScrolled ? 'text-gray-700' : 'text-gray-400' }`}>
+          {/* <NavLink to="/vision" onClick={handleLinkClick} className={({ isActive }) =>`transition-all duration-300 dark:text-white hover:text-tangering ${ isActive ? 'text-tangering' : isScrolled ? 'text-gray-700' : 'text-gray-400' }`}>
             Vision
+          </NavLink> */}
+          <NavLink to="/product" onClick={handleLinkClick} className={({ isActive }) =>`transition-all duration-300 dark:text-white hover:text-tangering ${
+                isActive ? 'text-tangering' : isScrolled ? 'text-gray-700' : 'text-gray-400'
+              }`}>
+            Product
           </NavLink>
           <NavLink to="/tech" onClick={handleLinkClick} className={({ isActive }) =>`transition-all duration-300 dark:text-white hover:text-tangering ${ isActive ? 'text-tangering' : isScrolled ? 'text-gray-700' : 'text-gray-400' }`}>
             Technology
@@ -65,11 +70,7 @@ const Navbar = () => {
           {/* <Link to="/testimonials" className="text-gray-700 dark:text-white hover:text-tangering transition-all duration-300">
             Testimonials
           </Link> */}
-          <NavLink to="/product" onClick={handleLinkClick} className={({ isActive }) =>`transition-all duration-300 dark:text-white hover:text-tangering ${
-                isActive ? 'text-tangering' : isScrolled ? 'text-gray-700' : 'text-gray-400'
-              }`}>
-            Product
-          </NavLink>
+          
           <NavLink to="/team" onClick={handleLinkClick} className={({ isActive }) =>`transition-all duration-300 dark:text-white hover:text-tangering ${ isActive ? 'text-tangering' : isScrolled ? 'text-gray-700' : 'text-gray-400' }`}>
             Team
           </NavLink>
@@ -95,17 +96,26 @@ const Navbar = () => {
             <NavLink to="/" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
               Home
             </NavLink>
-            <NavLink to="/vision" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
-              Vision
+            <NavLink to="/about" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
+              About Us
             </NavLink>
-            <NavLink to="/testimonials" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
-              Testimonials
+            {/* <NavLink to="/vision" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
+              Vision
+            </NavLink> */}
+            <NavLink to="/product" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
+              Product
+            </NavLink>
+            <NavLink to="/tech" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
+              Technology
             </NavLink>
             <NavLink to="/team" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
               Team
             </NavLink>
-            <NavLink to="/blog" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
-              Blog
+            <NavLink to="/careers" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
+              Careers
+            </NavLink>
+            <NavLink to="/investors" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
+              Investors
             </NavLink>
             <NavLink to="/contact" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
               Contact

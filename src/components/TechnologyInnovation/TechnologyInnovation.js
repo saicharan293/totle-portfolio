@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaRobot, FaBrain, FaCodeBranch } from 'react-icons/fa'; // Icons for tech stack
@@ -10,14 +10,14 @@ const TechnologyInnovation = () => {
   }, []);
 
   return (
-    <section className="relative bg-white dark:bg-gray-900 text-center py-20">
+    <section className="relative bg-white dark:bg-gray-900 text-center pt-20">
       {/* Parallax Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-20"
         style={{ backgroundImage: "url('/images/vision.jpg')" }} // Replace with an appropriate background
       ></div>
 
-      <div className="relative z-10 py-10 container mx-auto">
+      <div className="relative z-10 pt-10 container mx-auto">
         {/* Header: Vision Statement */}
         <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-tangering to-orange-500 text-transparent bg-clip-text" data-aos="fade-up">
           Technology & Innovation
@@ -97,7 +97,7 @@ const TechnologyInnovation = () => {
           <h2 className="text-4xl font-semibold text-gray-800 dark:text-white mb-8" data-aos="fade-up" data-aos-delay="300">
             Future Innovations
           </h2>
-          <p className="max-w-4xl mx-auto text-lg text-gray-600 dark:text-gray-300 mb-12" data-aos="fade-up" data-aos-delay="400">
+          <p className="max-w-4xl mx-auto text-lg text-gray-600 dark:text-gray-300" data-aos="fade-up" data-aos-delay="400">
             TOTLE is continuously exploring new AI technologies and educational innovations to further enhance the learning experience. Our R&D team is focused on the future of education, including the integration of immersive technologies like virtual reality (VR) and augmented reality (AR).
           </p>
         </section>
@@ -114,7 +114,7 @@ const TechnologyInnovation = () => {
       </div>
 
       {/* Decorative Divider */}
-      <svg
+      {/* <svg
         className="relative mt-10 w-full"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -126,7 +126,14 @@ const TechnologyInnovation = () => {
           fillOpacity="1"
           d="M0,192L48,192C96,192,192,192,288,213.3C384,235,480,277,576,277.3C672,277,768,235,864,213.3C960,192,1056,192,1152,202.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
-      </svg>
+      </svg> */}
+      <footer className="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+        <div className="mt-4 flex justify-center space-x-6">
+          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+        </div>
+      </footer>
     </section>
   );
 };

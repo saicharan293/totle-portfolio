@@ -25,15 +25,13 @@ const Home = () => {
       <section className="hero-bg bg-cover bg-center relative min-h-screen flex items-center justify-center parallax" style={{ backgroundImage: `url('/images/hero.jpg')` }}>
         <div className="overlay bg-black bg-opacity-50 absolute inset-0"></div>
         <div className="text-center relative z-10" data-aos="fade-up">
-          <h1 className="text-6xl font-extrabold text-white">
-            Shaping the Future of Learning
+          <h1 className="text-6xl font-extrabold text-white" data-aos="fade-up" data-aos-delay="200">
+            AI-powered learning<br /> Enhanced by human expertise
           </h1>
-          <p className="text-xl text-gray-300 mt-4" data-aos="fade-up" data-aos-delay="200">
-            AI-powered learning, enhanced by human expertise.
+          <p className="text-xl text-gray-300 mt-4 ">
+            Shaping the Future of Learning
           </p>
-          <Link to="/product" className="mt-8 inline-block bg-tangering text-white py-3 px-6 rounded-lg shadow-lg hover:bg-orange-600 transition pulse-animation">
-            Learn More
-          </Link>
+          
         </div>
       </section>
 
@@ -45,7 +43,7 @@ const Home = () => {
       </section>
 
       {/* Feature Highlights Section */}
-      <section className="py-20 bg-gray-100">
+      <section className="pt-[5rem] pb-[2rem] bg-gray-100">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <svg className="mx-auto mb-4 w-12 h-12 text-tangering" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -71,6 +69,11 @@ const Home = () => {
             <p className="text-gray-600">Preserving the human element in education.</p>
           </div>
         </div>
+        <section className='flex w-full justify-center'>
+        <Link to="/product" className="mt-8 inline-block text-center bg-tangering text-white py-3 px-6 rounded-lg shadow-lg hover:bg-orange-600 transition pulse-animation">
+            Learn More
+          </Link>
+        </section>
       </section>
 
       {/* Investor CTA */}
@@ -98,8 +101,8 @@ const Home = () => {
       <footer className="bg-gray-900 text-gray-400 py-8 text-center">
         <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
-          <Link to="/privacy-policy" className="hover:text-white transition">Privacy Policy</Link>
-          <Link to="/contact" className="hover:text-white transition">Contact Us</Link>
+          <Link className="hover:text-white transition">Privacy Policy</Link>
+          <Link className="hover:text-white transition">Contact Us</Link>
         </div>
       </footer>
     </div>

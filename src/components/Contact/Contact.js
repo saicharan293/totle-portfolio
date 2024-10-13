@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-20 text-center">
+    <section className="bg-gray-100 pt-20 text-center">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
 
@@ -56,7 +57,7 @@ const Contact = () => {
         ) : (
           <form
             onSubmit={handleSubmit}
-            className="max-w-md mx-auto bg-white p-6 pb-3 rounded-lg shadow-lg"
+            className="max-w-md mx-auto bg-white p-6 pb-3 mb-8 rounded-lg shadow-lg"
           >
             <div className="mb-4">
               <label
@@ -122,6 +123,13 @@ const Contact = () => {
           </form>
         )}
       </div>
+      <footer className="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+        <div className="mt-4 flex justify-center space-x-6">
+          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+        </div>
+      </footer>
     </section>
   );
 };

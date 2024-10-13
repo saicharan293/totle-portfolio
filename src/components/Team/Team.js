@@ -2,6 +2,7 @@ import React from 'react';
 import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'; // Icons for social media
 import AOS from 'aos'; // for scroll animations
 import 'aos/dist/aos.css';
+import { NavLink } from 'react-router-dom';
 
 const Team = () => {
   React.useEffect(() => {
@@ -11,7 +12,7 @@ const Team = () => {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-20 text-center">
+    <section className="bg-gray-100 pt-20 text-center">
       {/* Main Header */}
       <h2 className="text-4xl font-bold pt-10 mb-12" data-aos="fade-up">
         Meet Our Team
@@ -26,10 +27,10 @@ const Team = () => {
         >
           <img
             src="/images/sriragh.jpg"
-            alt="Yaswanth Sriragh"
+            alt="Yashwanth Sriragh"
             className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
           />
-          <h3 className="text-xl font-bold">Yaswanth Sriragh</h3>
+          <h3 className="text-xl font-bold">Yashwanth Sriragh</h3>
           <p className="text-tangering">Founder</p>
           <p className="mt-2 text-gray-600">
             Experienced in scaling education platforms, John drives TOTLE’s strategic vision.
@@ -106,6 +107,13 @@ const Team = () => {
           </div> */}
         {/* </div> */}
       </div>
+      <footer className="bg-gray-900 text-gray-400 py-8 mt-14 text-center">
+        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+        <div className="mt-4 flex justify-center space-x-6">
+          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+        </div>
+      </footer>
     </section>
   );
 };

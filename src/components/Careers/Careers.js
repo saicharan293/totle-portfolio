@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import AOS from "aos"; // for scroll animations
 import "aos/dist/aos.css";
 import axios from "axios";
@@ -22,27 +22,27 @@ const Careers = () => {
   }, []);
 
   const jobList = [
-    {
-      id: 1,
-      title: "Frontend Developer",
-      location: "Remote",
-      type: "Full-time",
-      description:
-        "Develop stunning user interfaces and interactive features using React and other modern frontend technologies.",
-    },
+    // {
+    //   id: 1,
+    //   title: "Frontend Developer",
+    //   location: "Remote",
+    //   type: "Part-time/Intern",
+    //   description:
+    //     "Develop stunning user interfaces and interactive features using React and other modern frontend technologies.",
+    // },
     {
       id: 2,
-      title: "Backend Developer",
+      title: "UX Designer",
       location: "Remote",
-      type: "Full-time",
+      type: "Part-time/Intern",
       description:
         "Build scalable backend services and APIs to power our AI-driven educational platform.",
     },
     {
       id: 3,
-      title: "AI Engineer",
+      title: "Data Analyst",
       location: "Remote",
-      type: "Full-time",
+      type: "Part-time/Intern",
       description:
         "Work on machine learning models and AI-driven features to deliver personalized learning experiences.",
     },
@@ -99,21 +99,21 @@ const Careers = () => {
     }
   };
   return (
-    <section className="bg-gray-100 py-20 text-center">
+    <section className="bg-gray-100 pt-20 text-center">
       {/* Main Header */}
       <h2 className="text-4xl font-bold pt-10 mb-12" data-aos="fade-up">
         Join Our Team
       </h2>
 
       {/* Open Positions Section */}
-      <section className="max-w-6xl mx-auto mb-16">
+      <section className="max-w-6xl mx-auto mb-16 ">
         <h3
           className="text-3xl font-semibold mb-6 text-tangering"
           data-aos="fade-up"
         >
           Open Positions
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-6">
           {jobList.map((job) => (
             <div
               key={job.id}
@@ -129,9 +129,9 @@ const Careers = () => {
                 <strong>Type:</strong> {job.type}
               </p>
               <p className="text-gray-600 mb-4">{job.description}</p>
-              <Link to="/apply" className="text-blue-500 hover:underline">
+              <a href="#apply" className="text-blue-500 hover:underline">
                 Apply Now
-              </Link>
+              </a>
             </div>
           ))}
         </div>
@@ -184,7 +184,7 @@ const Careers = () => {
       </section>
 
       {/* Apply Section */}
-      <section className="py-20 bg-white text-center">
+      <section className="pt-20 pb-6 bg-white text-center" id="apply">
         <h3
           className="text-3xl font-semibold mb-6 text-tangering"
           data-aos="fade-up"
@@ -235,16 +235,6 @@ const Careers = () => {
             />
           </div>
           <div className="mb-4">
-            <textarea
-              placeholder="Tell us why you want to join TOTLE"
-              name="reason"
-              onChange={handleChange}
-              value={formData.reason}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-tangering"
-              required
-            ></textarea>
-          </div>
-          <div className="mb-4">
             <input
               type="file"
               name="resume"
@@ -262,6 +252,13 @@ const Careers = () => {
           </button>
         </form>
       </section>
+      <footer className="bg-gray-900 text-gray-400 py-8  text-center">
+        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+        <div className="mt-4 flex justify-center space-x-6">
+          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+        </div>
+      </footer>
     </section>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
+// import { Link } from 'react-router-dom';
 import AOS from 'aos'; // For animations on scroll
 import 'aos/dist/aos.css';
+import { NavLink } from 'react-router-dom';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -28,8 +30,19 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Mission Statement */}
+      
+      {/* Founding Story */}
       <section className="py-20 bg-white">
+        <div className="container mx-auto text-center" data-aos="fade-up">
+          <h2 className="text-4xl font-bold mb-6 text-tangering">Our Founding Story</h2>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            TOTLE was born out of a shared vision between a group of educators and technologists who saw the potential for AI to transform learning. After years of development, TOTLE launched with a mission to bridge the gap between technology and traditional education. Our founders were driven by a passion to provide a more personalized and accessible learning experience for students around the globe.
+          </p>
+        </div>
+      </section>
+
+      {/* Mission Statement */}
+      <section className="py-20 bg-gray-100">
         <div className="container mx-auto text-center" data-aos="fade-up">
           <h2 className="text-4xl font-bold mb-6 text-tangering">Our Mission</h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
@@ -41,15 +54,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Founding Story */}
-      <section className="py-20 bg-gray-100">
-        <div className="container mx-auto text-center" data-aos="fade-up">
-          <h2 className="text-4xl font-bold mb-6 text-tangering">Our Founding Story</h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            TOTLE was born out of a shared vision between a group of educators and technologists who saw the potential for AI to transform learning. After years of development, TOTLE launched with a mission to bridge the gap between technology and traditional education. Our founders were driven by a passion to provide a more personalized and accessible learning experience for students around the globe.
-          </p>
-        </div>
-      </section>
 
       {/* Values Section */}
       <section className="py-20 bg-white">
@@ -75,6 +79,13 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      <footer className="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+        <div className="mt-4 flex justify-center space-x-6">
+          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+        </div>
+      </footer>
     </div>
   );
 };
