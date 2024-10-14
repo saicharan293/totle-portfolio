@@ -24,7 +24,7 @@ const Contact = () => {
     // Here, you can send the form data to an API endpoint (e.g., via fetch or axios)
     try {
       const response = await axios.post(
-        "https://totle-portfolio-backend-mvc.onrender.com/feedback/contact",
+        "https://totle-portfolio-backend-mvc-2.onrender.com/feedback/contact",
         formData
       );
       console.log(response.data);
