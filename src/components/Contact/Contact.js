@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify"; // Import toast components
+import "react-toastify/dist/ReactToastify.css"; // Import toast styles
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,8 +29,9 @@ const Contact = () => {
         "https://totle-portfolio-backend-mvc-2.onrender.com/feedback/contact",
         formData
       );
-      console.log(response.data);
-      setSubmitted(true);
+      // console.log(response.data);
+      // setSubmitted(true);
+      toast.success("Message sent successfully! We will get back to you soon.");
       setFormData({
         name: "",
         email: "",
@@ -39,6 +42,7 @@ const Contact = () => {
       }, 5000);
     } catch (error) {
       console.error("Error submitting the form", error);
+      toast.error("Error sending the message. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -123,6 +127,9 @@ const Contact = () => {
           </form>
         )}
       </div>
+
+      <ToastContainer />
+      
       <footer className="bg-gray-900 text-gray-400 py-8 text-center">
         <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">

@@ -90,6 +90,7 @@ const Careers = () => {
     data.append("resume", formData.resume);
     try {
       const response = await axios.post(
+        // "http://localhost:4000/career/apply",
         "https://totle-portfolio-backend-mvc-2.onrender.com/career/apply",
         data,
         {
