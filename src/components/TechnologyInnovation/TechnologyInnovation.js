@@ -9,11 +9,16 @@ const TechnologyInnovation = () => {
     AOS.init({ duration: 1200 });
   }, []);
 
+  const handleLinkClick = ()=>{
+    window.scrollTo(0, 0);
+  }
+
   return (
-    <section className="relative bg-white dark:bg-gray-900 text-center pt-20">
+    <>
+    <section className="relative bg-white dark:bg-gray-900 text-center pt-20 pb-2">
       {/* Parallax Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-20"
+        className="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-20 "
         style={{ backgroundImage: "url('/images/vision.jpg')" }} // Replace with an appropriate background
       ></div>
 
@@ -127,14 +132,15 @@ const TechnologyInnovation = () => {
           d="M0,192L48,192C96,192,192,192,288,213.3C384,235,480,277,576,277.3C672,277,768,235,864,213.3C960,192,1056,192,1152,202.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg> */}
+    </section>
       <footer className="bg-gray-900 text-gray-400 py-8 text-center">
         <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
           <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+          <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
         </div>
       </footer>
-    </section>
+      </>
   );
 };
 

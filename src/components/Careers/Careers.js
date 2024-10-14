@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import AOS from "aos"; // for scroll animations
 import "aos/dist/aos.css";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify"; // Import toast components
+import "react-toastify/dist/ReactToastify.css"; // Import toast styles
 
 const Careers = () => {
   const [formData, setFormData] = useState({
@@ -14,12 +16,17 @@ const Careers = () => {
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     AOS.init({
       duration: 1200,
     });
   }, []);
+
+  const handleLinkClick = ()=>{
+    window.scrollTo(0, 0);
+  }
 
   const jobList = [
     // {
@@ -56,10 +63,21 @@ const Careers = () => {
   };
 
   const handleFileChange = (e) => {
-    setFormData({
-      ...formData,
-      resume: e.target.files[0], // Only allow one file upload
-    });
+    const file = e.target.files[0];
+    // Ensure the file is a PDF
+    if (file && file.type === "application/pdf") {
+      setFormData({
+        ...formData,
+        resume: file, 
+      });
+    } else {
+      // Show error if the file is not a PDF
+      toast.error("Please upload a PDF file.");
+      // Reset the file input
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ""; 
+      }
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -83,17 +101,22 @@ const Careers = () => {
 
       console.log(response.data);
       setSubmitted(true);
+      toast.success("Application has been submitted successfully!");
       setFormData({
         name: "",
         email: "",
         reason: "",
         resume: null,
       });
+      if (fileInputRef.current) {
+        fileInputRef.current.value = "";
+      }
       setTimeout(() => {
         setSubmitted(false);
-      }, 3000);
+      }, 1000);
     } catch (error) {
       console.error("Error submitting the form", error);
+      toast.error("Error submitting the form, please try again.");
     } finally {
       setLoading(false);
     }
@@ -197,15 +220,15 @@ const Careers = () => {
           data-aos-delay="200"
         >
           If you’re ready to join a forward-thinking, mission-driven company,
-          we’d love to hear from you! Fill out the form below or upload your
-          resume and cover letter.
+          we’d love to hear from you! Fill out the form below and upload your
+          resume.
         </p>
         {/* Form */}
-        {submitted ? (
+        {/* {submitted ? (
           <div className="bg-green-500 text-white p-4 rounded-md">
             <p>Your application has been sent successfully!</p>
           </div>
-        ) : null}
+        ) : null} */}
         <form
           className="max-w-2xl mx-auto"
           data-aos="fade-up"
@@ -239,6 +262,8 @@ const Careers = () => {
               type="file"
               name="resume"
               onChange={handleFileChange}
+              ref={fileInputRef}
+              accept="application/pdf"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-tangering"
               required
             />
@@ -252,11 +277,13 @@ const Careers = () => {
           </button>
         </form>
       </section>
+      <ToastContainer />
+
       <footer className="bg-gray-900 text-gray-400 py-8  text-center">
         <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
           <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+          <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
         </div>
       </footer>
     </section>

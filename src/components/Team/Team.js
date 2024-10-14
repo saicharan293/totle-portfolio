@@ -11,6 +11,10 @@ const Team = () => {
     });
   }, []);
 
+  const handleLinkClick = ()=>{
+    window.scrollTo(0, 0);
+  }
+
   return (
     <section className="bg-gray-100 pt-20 text-center">
       {/* Main Header */}
@@ -32,18 +36,18 @@ const Team = () => {
           />
           <h3 className="text-xl font-bold">Yashwanth Sriragh</h3>
           <p className="text-tangering">Founder</p>
-          <p className="mt-2 text-gray-600">
+          {/* <p className="mt-2 text-gray-600">
             Experienced in scaling education platforms, John drives TOTLE’s strategic vision.
-          </p>
+          </p> */}
           {/* Social Media Links */}
           <div className="flex justify-center mt-4 space-x-4">
-            <a href="https://linkedin.com" className="text-gray-700 hover:text-blue-500 transition">
+            <a href="https://www.linkedin.com/in/sriragh-pinnapareddy-95961a295" rel="noopener noreferrer" target="_blank" className="text-gray-700 hover:text-blue-500 transition">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://twitter.com" className="text-gray-700 hover:text-blue-400 transition">
+            <a href="https://x.com/p_sriragh" target='_blank' rel="noopener noreferrer" className="text-gray-700 hover:text-blue-400 transition">
               <FaTwitter size={24} />
             </a>
-            <a href="mailto:john@totle.com" className="text-gray-700 hover:text-red-500 transition">
+            <a href="mailto:sriragh.yash@gmail.com" rel="noopener noreferrer" target="_blank" className="text-gray-700 hover:text-red-500 transition">
               <FaEnvelope size={24} />
             </a>
           </div>
@@ -111,7 +115,7 @@ const Team = () => {
         <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
           <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+          <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
         </div>
       </footer>
     </section>

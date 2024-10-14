@@ -9,6 +9,10 @@ const AboutUs = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  const handleLinkClick = ()=>{
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div>
       {/* Hero Section */}
@@ -16,7 +20,7 @@ const AboutUs = () => {
         <div className="overlay bg-black bg-opacity-50 absolute inset-0"></div>
         <div className="text-center relative z-10" data-aos="fade-up">
           <h1 className="text-6xl font-extrabold text-white">About TOTLE</h1>
-          <p className="text-xl text-gray-300 mt-4">Our story, mission, and values</p>
+          <p className="text-xl text-gray-300 mt-4">Our story, mission and values</p>
         </div>
       </section>
 
@@ -25,7 +29,7 @@ const AboutUs = () => {
         <div className="container mx-auto text-center" data-aos="fade-up">
           <h2 className="text-4xl font-bold mb-6 text-tangering">Company Overview</h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            TOTLE was founded with the goal of reshaping education by combining artificial intelligence with human expertise. We believe in providing an accessible, personalized, and impactful learning experience for students of all backgrounds.
+          TOTLE is found to reshape the face of education by combining Artificial intelligence with human expertise. We aim to provide accessible, personalised, and impactful learning experiences for students of all backgrounds across various domains by adapting to the learner's pace while preserving human essence in the knowledge transfer.
           </p>
         </div>
       </section>
@@ -61,8 +65,9 @@ const AboutUs = () => {
           <h2 className="text-4xl font-bold mb-6 text-tangering">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-semibold mb-2">Innovation</h3>
-              <p className="text-gray-600">We embrace cutting-edge technology to deliver the best learning experiences.</p>
+              <h3 className="text-xl font-semibold mb-2">Profit with Purpose</h3>
+              <p className="text-gray-600">Although a profit-making entity, every rupee earned will be 
+              reinvested back into education.</p>
             </div>
             <div className="p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl font-semibold mb-2">Growth</h3>
@@ -83,7 +88,7 @@ const AboutUs = () => {
         <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
           <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+          <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
         </div>
       </footer>
     </div>

@@ -12,6 +12,10 @@ const Investors = () => {
     });
   }, []);
 
+  const handleLinkClick = ()=>{
+    window.scrollTo(0, 0);
+  }
+
   return (
     <section className="bg-gray-100 pt-20 text-center">
       {/* Main Header */}
@@ -23,14 +27,14 @@ const Investors = () => {
         <p className="text-lg text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
           Download our investor pitch deck to learn more about TOTLE’s mission, growth strategy, and how we plan to transform education with AI-driven solutions.
         </p>
-        <a
+        {/* <a
           href="/documents/TOTLE-Investor-Pitch-Deck.pdf"
           className="inline-block bg-tangering text-white py-3 px-8 rounded-lg shadow-lg hover:bg-orange-600 transition-all duration-300"
           data-aos="fade-up"
           data-aos-delay="400"
         >
           Download Pitch Deck
-        </a>
+        </a> */}
       </section>
 
       {/* Market Opportunity Section */}
@@ -204,7 +208,7 @@ const Investors = () => {
         <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
           <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+          <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
         </div>
       </footer>
     </section>

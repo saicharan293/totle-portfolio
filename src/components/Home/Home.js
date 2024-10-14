@@ -19,6 +19,9 @@ const Home = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  const handleLinkClick = ()=>{
+    window.scrollTo(0, 0);
+  }
   return (
     <div>
       {/* Hero Section with Background Image */}
@@ -102,7 +105,7 @@ const Home = () => {
         <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
           <Link className="hover:text-white transition">Privacy Policy</Link>
-          <Link className="hover:text-white transition">Contact Us</Link>
+          <Link to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</Link>
         </div>
       </footer>
     </div>

@@ -84,7 +84,7 @@ const Navbar = () => {
             Investors
           </NavLink>
           <NavLink to="/contact" onClick={handleLinkClick} className="flex items-center bg-tangering text-white py-2 px-6 rounded-lg hover:bg-orange-600 transition-all duration-300">
-            <FaEnvelope className="mr-2" /> Contact
+            <FaEnvelope className="mr-2" /> Contact Us
           </NavLink>
         </div>
 
@@ -118,7 +118,7 @@ const Navbar = () => {
               Investors
             </NavLink>
             <NavLink to="/contact" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-white text-xl hover:text-tangering">
-              Contact
+              Contact Us
             </NavLink>
           </div>
         </div>

@@ -10,8 +10,13 @@ const Product = () => {
     AOS.init({ duration: 1200 });
   }, []);
 
+  const handleLinkClick = ()=>{
+    window.scrollTo(0, 0);
+  }
+
   return (
-    <section className="relative bg-white dark:bg-gray-900 text-center pt-20">
+    <>
+    <section className="relative bg-white dark:bg-gray-900 text-center pt-20 pb-5">
       {/* Parallax Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-20"
@@ -102,24 +107,23 @@ const Product = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-6 md:mt-6  justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 justify-between">
             {/* Step 4: AI Evaluation and Feedback */}
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-[388px] mx-auto" data-aos="fade-up" data-aos-delay="700">
+            <div className="bg-white w-[388px] dark:bg-gray-800 p-6 rounded-lg shadow-lg mx-auto flex flex-col h-full" data-aos="fade-up" data-aos-delay="700">
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Step 4: AI Evaluation and Feedback</h3>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">
+              <p className="text-gray-600 dark:text-gray-300 mt-2 flex-grow">
                 After each session, TOTLE’s AI evaluates the user's understanding and offers detailed feedback to both the student and future Bridgers.
               </p>
             </div>
 
             {/* Step 5: Progress Tracking */}
-            <div className="bg-white dark:bg-gray-800 p-6 mt-6 rounded-lg shadow-lg w-[388px] mx-auto" data-aos="fade-up" data-aos-delay="800">
+            <div className="bg-white w-[388px] dark:bg-gray-800 p-6 rounded-lg shadow-lg mx-auto flex flex-col h-full" data-aos="fade-up" data-aos-delay="800">
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Step 5: Progress Tracking</h3>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">
+              <p className="text-gray-600 dark:text-gray-300 mt-2 flex-grow">
                 The user monitors their progress and achievements through detailed reports, providing motivation and insights into their learning journey.
               </p>
             </div>
-          </div>
-          {/* </div> */}
+        </div>
         </section>
 
         {/* Footer  */}
@@ -135,17 +139,19 @@ const Product = () => {
           Learn More About Our Product
         </Link> */}
       </div>
-      <footer className="bg-gray-900 text-gray-400 py-8 text-center">
-        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
-        <div className="mt-4 flex justify-center space-x-6">
-          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink className="hover:text-white transition">Contact Us</NavLink>
-        </div>
-      </footer>
 
       {/* Decorative Divider */}
       
+      
     </section>
+    <footer className="bg-gray-900 text-gray-400 py-8 text-center">
+    <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+    <div className="mt-4 flex justify-center space-x-6">
+      <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+      <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
+    </div>
+  </footer>
+  </>
   );
 };
 
