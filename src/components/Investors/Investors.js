@@ -22,20 +22,20 @@ const Investors = () => {
       <h2 className="text-4xl font-bold pt-10 mb-12" data-aos="fade-up">Invest in TOTLE</h2>
 
       {/* Investor Pitch Deck Section */}
-      <section className="max-w-4xl mx-auto mb-16">
+      {/* <section className="max-w-4xl mx-auto mb-16">
         <h3 className="text-3xl font-semibold mb-6 text-tangering" data-aos="fade-up">Investor Pitch Deck</h3>
         <p className="text-lg text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
           Download our investor pitch deck to learn more about TOTLE’s mission, growth strategy, and how we plan to transform education with AI-driven solutions.
         </p>
-        {/* <a
+        <a
           href="/documents/TOTLE-Investor-Pitch-Deck.pdf"
           className="inline-block bg-tangering text-white py-3 px-8 rounded-lg shadow-lg hover:bg-orange-600 transition-all duration-300"
           data-aos="fade-up"
           data-aos-delay="400"
         >
           Download Pitch Deck
-        </a> */}
-      </section>
+        </a>
+      </section> */}
 
       {/* Market Opportunity Section */}
       <section className="py-16 bg-gradient-to-r from-tangering to-orange-500 text-white">

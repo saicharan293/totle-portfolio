@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { FaRobot } from 'react-icons/fa6';
 
 const settings = {
   dots: true,
@@ -31,7 +32,7 @@ const Home = () => {
           <h1 className="text-6xl font-extrabold text-white" data-aos="fade-up" data-aos-delay="200">
             AI-powered learning<br /> Enhanced by human expertise
           </h1>
-          <p className="text-xl text-gray-300 mt-4 ">
+          <p className="text-xl text-gray-200 mt-4 ">
             Shaping the Future of Learning
           </p>
           
@@ -49,10 +50,11 @@ const Home = () => {
       <section className="pt-[5rem] pb-[2rem] bg-gray-100">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <svg className="mx-auto mb-4 w-12 h-12 text-tangering" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {/* <svg className="mx-auto mb-4 w-12 h-12 text-tangering" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c2.28 0 4-1.72 4-4s-1.72-4-4-4-4 1.72-4 4 1.72 4 4 4z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14c0 1.88 1.4 3.57 3.47 3.96A2.5 2.5 0 0113 20h1v2H7v-2h1a2.5 2.5 0 011.53-2.04C9.6 17.57 8 15.88 8 14zm9.62 1.03l-1.27-.6a2.5 2.5 0 010-4.86l1.27-.6a5 5 0 010 6.06zM15 10l.89-.45a2.5 2.5 0 000-4.56L15 4.54a5 5 0 000 5.92zM13.76 17a5 5 0 000-2.75l1.27-.6a2.5 2.5 0 010 4.86l-1.27-.6z" />
-            </svg>
+            </svg> */}
+            <FaRobot className="mx-auto mb-4 w-12 h-12 text-tangering" />
             <h3 className="text-xl font-semibold mb-2">AI-driven Assessments</h3>
             <p className="text-gray-600">Manage logistics and assessments with AI precision.</p>
           </div>
@@ -73,7 +75,7 @@ const Home = () => {
           </div>
         </div>
         <section className='flex w-full justify-center'>
-        <Link to="/product" className="mt-8 inline-block text-center bg-tangering text-white py-3 px-6 rounded-lg shadow-lg hover:bg-orange-600 transition pulse-animation">
+        <Link to="/product" onClick={handleLinkClick} className="mt-8 inline-block text-center bg-tangering text-white py-3 px-6 rounded-lg shadow-lg hover:bg-orange-600 transition pulse-animation">
             Learn More
           </Link>
         </section>
