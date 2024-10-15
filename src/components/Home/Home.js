@@ -59,17 +59,24 @@ const Home = () => {
             <p className="text-gray-600">Manage logistics and assessments with AI precision.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <svg className="mx-auto mb-4 w-12 h-12 text-tangering" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {/* <svg className="mx-auto mb-4 w-12 h-12 text-tangering" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7H7v6h6V7z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6v6H9V7zM4 11h2v2H4v-2zm12 0h2v2h-2v-2zm-6 8v2H4v-2h2v-4H4v-2h4v2H6v4h4zM16 15h4v4h-4v-4zM4 11h2v2H4v-2zm4 0h6v2H8v-2z" />
-            </svg>
+            </svg> */}
+            <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4 w-12 h-12 text-tangering" viewBox="-0.5 -0.5 16 16" 
+                  id="Route-Fill--Streamline-Mingcute-Fill"
+                  height="16" width="16"><desc>Route Fill Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero">
+                  <path  d="M15 0v15H0V0h15ZM7.870625 14.536249999999999l-0.006874999999999999 0.00125 -0.044375 0.021875000000000002 -0.0125 0.0025 -0.00875 -0.0025 -0.044375 -0.021875000000000002c-0.00625 -0.0025 -0.011875 -0.000625 -0.015 0.003125l-0.0025 0.00625 -0.010625 0.2675 0.003125 0.0125 0.00625 0.008125 0.065 0.04625 0.009375 0.0025 0.0075 -0.0025 0.065 -0.04625 0.0075 -0.01 0.0025 -0.010625 -0.010625 -0.266875c-0.00125 -0.00625 -0.005625 -0.010625 -0.010625 -0.01125Zm0.16562500000000002 -0.07062500000000001 -0.008125 0.00125 -0.115625 0.058124999999999996 -0.00625 0.00625 -0.001875 0.006874999999999999 0.01125 0.26875 0.003125 0.0075 0.005 0.004375 0.12562500000000001 0.058124999999999996c0.0075 0.0025 0.014374999999999999 0 0.018125000000000002 -0.005l0.0025 -0.00875 -0.02125 -0.38375c-0.001875 -0.0075 -0.00625 -0.0125 -0.0125 -0.013749999999999998Zm-0.44687499999999997 0.00125a0.014374999999999999 0.014374999999999999 0 0 0 -0.016875 0.00375l-0.00375 0.00875 -0.02125 0.38375c0 0.0075 0.004375 0.0125 0.010625 0.015l0.009375 -0.00125 0.12562500000000001 -0.058124999999999996 0.00625 -0.005 0.0025 -0.006874999999999999 0.010625 -0.26875 -0.001875 -0.0075 -0.00625 -0.00625 -0.11499999999999999 -0.057499999999999996Z" stroke-width="1"></path><path fill="#ff6347"  d="M11.25 10a1.875 1.875 0 1 1 0 3.75 1.875 1.875 0 0 1 0 -3.75ZM9.6875 2.5a2.8125 2.8125 0 1 1 0 5.625h-4.375a1.5625 1.5625 0 0 0 0 3.125H8.125a0.625 0.625 0 1 1 0 1.25H5.3125a2.8125 2.8125 0 1 1 0 -5.625h4.375a1.5625 1.5625 0 0 0 0 -3.125H6.875a0.625 0.625 0 1 1 0 -1.25h2.8125ZM3.75 1.25a1.875 1.875 0 1 1 0 3.75 1.875 1.875 0 0 1 0 -3.75Z" stroke-width="1"></path>
+                  </g>
+              </svg>
             <h3 className="text-xl font-semibold mb-2">Personalized Learning Paths</h3>
             <p className="text-gray-600">Tailored learning paths for every student.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <svg className="mx-auto mb-4 w-12 h-12 text-tangering" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {/* <svg className="mx-auto mb-4 w-12 h-12 text-tangering" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.92 12.1l-.96-3.72m1.2 4.62h-3.9m4.62 1.92l-2.7 3.6m0 0l-2.7-3.6m0 0L9.96 9.12M7.8 10.32L8.76 6.6M5.52 10.8h3.9m-.96-1.92l2.7-3.6" />
-            </svg>
+            </svg> */}
+            <img src="/images/follow.png"  alt="Human centric" className="mx-auto mb-4 w-12 h-12 text-tangering bg-transparent" />
             <h3 className="text-xl font-semibold mb-2">Human-Centric Teaching</h3>
             <p className="text-gray-600">Preserving the human element in education.</p>
           </div>
