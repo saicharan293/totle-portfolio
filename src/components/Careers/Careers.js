@@ -29,21 +29,21 @@ const Careers = () => {
   }
 
   const jobList = [
-    // {
-    //   id: 1,
-    //   title: "Frontend Developer",
-    //   location: "Remote",
-    //   type: "Part-time/Intern",
-    //   description:
-    //     "Develop stunning user interfaces and interactive features using React and other modern frontend technologies.",
-    // },
+    {
+      id: 1,
+      title: "Machine Learning Engineer",
+      location: "Remote",
+      type: "Part-time/Intern",
+      description:
+        "Work on machine learning models and AI-driven features to deliver personalized learning experiences.",
+    },
     {
       id: 2,
       title: "UX Designer",
       location: "Remote",
       type: "Part-time/Intern",
       description:
-        "Build scalable backend services and APIs to power our AI-driven educational platform.",
+        "Research, design and implement all user experiences of the product and service.",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ const Careers = () => {
       location: "Remote",
       type: "Part-time/Intern",
       description:
-        "Work on machine learning models and AI-driven features to deliver personalized learning experiences.",
+        "Develop, implement and maintain leading-edge anlytics systems to take informed decisions.",
     },
   ];
 
@@ -137,7 +137,7 @@ const Careers = () => {
         >
           Open Positions
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 px-6">
           {jobList.map((job) => (
             <div
               key={job.id}

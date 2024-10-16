@@ -36,9 +36,9 @@ const Team = () => {
           />
           <h3 className="text-xl font-bold">Yashwanth Sriragh</h3>
           <p className="text-tangering">Founder</p>
-          {/* <p className="mt-2 text-gray-600">
-            Experienced in scaling education platforms, John drives TOTLE’s strategic vision.
-          </p> */}
+          <p className="mt-2 text-gray-600">
+            Senior Software Engineer @ Volkswagen | 98.52 percentile @ CAT 2018 | Mechanical Engineer | Screen Writer
+          </p>
           {/* Social Media Links */}
           <div className="flex justify-center mt-4 space-x-4">
             <a href="https://www.linkedin.com/in/sriragh-pinnapareddy-95961a295" rel="noopener noreferrer" target="_blank" className="text-gray-700 hover:text-blue-500 transition">
