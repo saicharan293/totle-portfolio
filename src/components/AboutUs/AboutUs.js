@@ -20,7 +20,7 @@ const AboutUs = () => {
         <div className="overlay bg-black bg-opacity-50 absolute inset-0"></div>
         <div className="text-center relative z-10" data-aos="fade-up">
           <h1 className="text-6xl font-extrabold text-white">About TOTLE</h1>
-          <p className="text-xl text-gray-300 mt-4">Our story, mission and values</p>
+          <p className="text-xl text-gray-300 mt-4">Our story, vision and values</p>
         </div>
       </section>
 
@@ -48,9 +48,9 @@ const AboutUs = () => {
       {/* Mission Statement */}
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto text-center" data-aos="fade-up">
-          <h2 className="text-4xl font-bold mb-6 text-tangering">Our Mission</h2>
+          <h2 className="text-4xl font-bold mb-6 text-tangering">Our Vision</h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
-            Our mission is to democratize education by leveraging AI-powered learning solutions that maintain the human touch, ensuring that everyone has access to personalized, world-class learning opportunities.
+            Our vision is to democratize education by leveraging AI-powered learning solutions that maintain the human touch, ensuring that everyone has access to personalized, world-class learning opportunities.
           </p>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             We aim to build a future where education is not limited by geographical, economic, or social boundaries, but is available to everyone, everywhere.
