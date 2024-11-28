@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos'; // for scroll animations
 import 'aos/dist/aos.css';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'; // For custom progress bars
+// import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'; 
 import 'react-circular-progressbar/dist/styles.css';
-import { FaUsers, FaHandshake, FaLaptopCode } from 'react-icons/fa'; // Icons
+// import { FaUsers, FaHandshake, FaLaptopCode } from 'react-icons/fa'; 
 
 const VisionMission = () => {
   useEffect(() => {

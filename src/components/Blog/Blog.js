@@ -82,7 +82,7 @@ const Blog = () => {
 
             {/* Read More Button */}
             <a
-              href="#"
+              href="/"
               className="inline-block bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition-all"
             >
               Read More

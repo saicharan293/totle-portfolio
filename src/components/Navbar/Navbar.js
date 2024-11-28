@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaSearch, FaBars, FaTimes, FaEnvelope } from 'react-icons/fa'; // Icons for search, menu, and close
+import {  FaBars, FaTimes, FaEnvelope } from 'react-icons/fa'; // Icons for search, menu, and close
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

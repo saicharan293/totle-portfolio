@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
-import AOS from "aos"; // for scroll animations
+import {  NavLink } from "react-router-dom";
+import AOS from "aos"; 
 import "aos/dist/aos.css";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify"; // Import toast components

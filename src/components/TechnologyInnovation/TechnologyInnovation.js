@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaRobot, FaBrain, FaCodeBranch } from 'react-icons/fa'; // Icons for tech stack

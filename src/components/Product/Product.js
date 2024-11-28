@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos'; // for scroll animations
 import 'aos/dist/aos.css';
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 
 import { FaRobot, FaBookOpen, FaChalkboardTeacher, FaUserGraduate } from 'react-icons/fa'; // Icons for features
 

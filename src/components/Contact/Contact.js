@@ -29,7 +29,7 @@ const Contact = () => {
         "https://totle-portfolio-backend-mvc-2.onrender.com/feedback/contact",
         formData
       );
-      // console.log(response.data);
+      console.log(response.data);
       // setSubmitted(true);
       toast.success("Message sent successfully! We will get back to you soon.");
       setFormData({
