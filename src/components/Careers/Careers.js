@@ -225,11 +225,11 @@ const Careers = () => {
           resume.
         </p>
         {/* Form */}
-        {/* {submitted ? (
+        {submitted ? (
           <div className="bg-green-500 text-white p-4 rounded-md">
             <p>Your application has been sent successfully!</p>
           </div>
-        ) : null} */}
+        ) : null} 
         <form
           className="max-w-2xl mx-auto"
           data-aos="fade-up"
