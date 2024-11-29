@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
-import {  NavLink } from "react-router-dom";
-import AOS from "aos"; 
+import { NavLink, useNavigate } from "react-router-dom";
+import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify"; // Import toast components
 import "react-toastify/dist/ReactToastify.css"; // Import toast styles
+import { FaLinkedin, FaTwitter } from "react-icons/fa"; // Icons for social media
 
 const Careers = () => {
   const [formData, setFormData] = useState({
@@ -24,9 +25,11 @@ const Careers = () => {
     });
   }, []);
 
-  const handleLinkClick = ()=>{
+  const navigate = useNavigate();
+  const handleLinkClick = () => {
+    navigate("/contact");
     window.scrollTo(0, 0);
-  }
+  };
 
   const jobList = [
     {
@@ -68,14 +71,14 @@ const Careers = () => {
     if (file && file.type === "application/pdf") {
       setFormData({
         ...formData,
-        resume: file, 
+        resume: file,
       });
     } else {
       // Show error if the file is not a PDF
       toast.error("Please upload a PDF file.");
       // Reset the file input
       if (fileInputRef.current) {
-        fileInputRef.current.value = ""; 
+        fileInputRef.current.value = "";
       }
     }
   };
@@ -229,7 +232,7 @@ const Careers = () => {
           <div className="bg-green-500 text-white p-4 rounded-md">
             <p>Your application has been sent successfully!</p>
           </div>
-        ) : null} 
+        ) : null}
         <form
           className="max-w-2xl mx-auto"
           data-aos="fade-up"
@@ -280,11 +283,28 @@ const Careers = () => {
       </section>
       <ToastContainer />
 
-      <footer className="bg-gray-900 text-gray-400 py-8  text-center">
-        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
-        <div className="mt-4 flex justify-center space-x-6">
-          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
+      <footer className="bg-gray-900 text-gray-400 py-8 px-8 mt-14 flex items-center justify-between gap-4">
+        <div className="">
+          <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+          <div className="mt-4 flex justify-center space-x-6">
+            <NavLink className="hover:text-white transition">
+              Privacy Policy
+            </NavLink>
+            <NavLink
+              to="/contact"
+              onClick={handleLinkClick}
+              className="hover:text-white transition"
+            >
+              Contact Us
+            </NavLink>
+          </div>
+        </div>
+        <div>
+          <h4 className="mb-2">Follow us on</h4>
+          <div className="flex gap-4 items-center justify-start">
+            <FaLinkedin />
+            <FaTwitter />
+          </div>
         </div>
       </footer>
     </section>

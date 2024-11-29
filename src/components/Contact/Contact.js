@@ -3,6 +3,8 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify"; // Import toast components
 import "react-toastify/dist/ReactToastify.css"; // Import toast styles
+import { FaLinkedin, FaTwitter } from 'react-icons/fa'; // Icons for social media
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +22,10 @@ const Contact = () => {
     });
   };
 
+  const handleLinkClick = ()=>{
+    window.scrollTo(0, 0);
+  }
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -51,7 +57,13 @@ const Contact = () => {
   return (
     <section className="bg-gray-100 pt-20 text-center">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
+        {/* <h2 className="text-4xl font-bold mb-4">Contact Us</h2> */}
+        <div className="">
+          <h2 className="text-4xl font-bold mb-2">Get in touch with us </h2 > 
+          <p className="p-2">
+           Connect with our customer support experts for assistance with any issues/questions you might have on : <strong> +91 9381281438 </strong> <br /> Or <br /> Drop us a mail below
+          </p>
+        </div>
 
         {/* Display success message after form submission */}
         {submitted ? (
@@ -122,7 +134,7 @@ const Contact = () => {
               disabled={loading}
               className="bg-tangering text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition"
             >
-              {loading ? "Submitting..." : "Submit Application"}
+              {loading ? "Submitting..." : "Submit"}
             </button>
           </form>
         )}
@@ -130,11 +142,20 @@ const Contact = () => {
 
       <ToastContainer />
       
-      <footer className="bg-gray-900 text-gray-400 py-8 text-center">
-        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
-        <div className="mt-4 flex justify-center space-x-6">
-          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink className="hover:text-white transition">Contact Us</NavLink>
+      <footer className="bg-gray-900 text-gray-400 py-8 px-8 mt-14 flex items-center justify-between gap-4">
+        <div className="">
+          <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+          <div className="mt-4 flex justify-center space-x-6">
+            <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+            <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
+          </div>
+        </div>
+        <div>
+          <h4 className='mb-2'>Follow us on</h4>
+          <div className='flex gap-4 items-center justify-start'>
+            <FaLinkedin />
+            <FaTwitter />
+          </div>
         </div>
       </footer>
     </section>

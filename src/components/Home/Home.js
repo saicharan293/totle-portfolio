@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { FaLinkedin, FaTwitter } from 'react-icons/fa'; // Icons for social media
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import Slider from 'react-slick';
@@ -14,13 +15,14 @@ import { FaRobot } from 'react-icons/fa6';
 //   slidesToShow: 1,
 //   slidesToScroll: 1,
 // };
-
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-
+  
+  const navigate=useNavigate()
   const handleLinkClick = ()=>{
+    navigate('/contact')
     window.scrollTo(0, 0);
   }
   return (
@@ -82,9 +84,9 @@ const Home = () => {
           </div>
         </div>
         <section className='flex w-full justify-center'>
-        <Link to="/product" onClick={handleLinkClick} className="mt-8 inline-block text-center bg-tangering text-white py-3 px-6 rounded-lg shadow-lg hover:bg-orange-600 transition pulse-animation">
+        <NavLink to="/product" onClick={handleLinkClick} className="mt-8 inline-block text-center bg-tangering text-white py-3 px-6 rounded-lg shadow-lg hover:bg-orange-600 transition pulse-animation">
             Learn More
-          </Link>
+          </NavLink>
         </section>
       </section>
 
@@ -110,11 +112,20 @@ const Home = () => {
       </section> */}
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-8 text-center">
-        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
-        <div className="mt-4 flex justify-center space-x-6">
-          <Link className="hover:text-white transition">Privacy Policy</Link>
-          <Link to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</Link>
+      <footer className="bg-gray-900 text-gray-400 py-8 px-8 mt-14 flex items-center justify-between gap-4">
+        <div className="">
+          <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+          <div className="mt-4 flex justify-center space-x-6">
+            <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+            <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
+          </div>
+        </div>
+        <div>
+          <h4 className='mb-2'>Follow us on</h4>
+          <div className='flex gap-4 items-center justify-start'>
+            <FaLinkedin />
+            <FaTwitter />
+          </div>
         </div>
       </footer>
     </div>

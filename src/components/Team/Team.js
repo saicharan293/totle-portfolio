@@ -2,7 +2,8 @@ import React from 'react';
 import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'; // Icons for social media
 import AOS from 'aos'; // for scroll animations
 import 'aos/dist/aos.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+// import { FaLinkedin } from "react-icons/fa";
 
 const Team = () => {
   React.useEffect(() => {
@@ -11,7 +12,9 @@ const Team = () => {
     });
   }, []);
 
+  const navigate= useNavigate()
   const handleLinkClick = ()=>{
+    navigate('/contact')
     window.scrollTo(0, 0);
   }
 
@@ -23,10 +26,10 @@ const Team = () => {
       </h2>
 
       {/* Team Members Section */}
-      <div className="grid gap-8 px-6 place-items-center">
+      <div className="grid grid-cols-2 px-6 place-items-center">
         {/* Team Member 1 */}
         <div
-          className="w-full md:w-5/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+          className="w-full md:w-11/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
           data-aos="fade-up"
         >
           <img
@@ -47,29 +50,31 @@ const Team = () => {
             <a href="https://x.com/p_sriragh" target='_blank' rel="noopener noreferrer" className="text-gray-700 hover:text-blue-400 transition">
               <FaTwitter size={24} />
             </a>
-            <a href="mailto:sriragh.yash@gmail.com" rel="noopener noreferrer" target="_blank" className="text-gray-700 hover:text-red-500 transition">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sriragh.yash@gmail.com" rel="noopener noreferrer" target="_blank" className="text-gray-700 hover:text-red-500 transition">
               <FaEnvelope size={24} />
             </a>
           </div>
         </div>
 
         {/* Team Member 2 */}
-        {/* <div
-          className="w-full md:w-5/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+        <div
+          className="w-full md:w-11/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
           data-aos="fade-up"
-        > */}
-          {/* <img
-            src="/images/team2.jpg"
+        >
+          <img
+            src="/images/sriragh.jpg"
             alt="Jane Smith"
-            className="rounded-full w-[414px] h-[896px] mx-auto mb-4 shadow-lg md:w-32 md:h-32 lg:w-40 lg:h-40" // Responsive dimensions
+            className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
+
+            // className="rounded-full w-30 h-[896px] mx-auto mb-4 shadow-lg md:w-32 md:h-32 lg:w-40 lg:h-40" // Responsive dimensions
           />
           <h3 className="text-xl font-bold">Jane Smith</h3>
           <p className="text-blue-500">CTO</p>
           <p className="mt-2 text-gray-600">
             Jane leads our tech initiatives, with expertise in AI and machine learning.
-          </p> */}
+          </p>
           {/* Social Media Links */}
-          {/* <div className="flex justify-center mt-4 space-x-4">
+          <div className="flex justify-center mt-4 space-x-4">
             <a href="https://linkedin.com" className="text-gray-700 hover:text-blue-500 transition">
               <FaLinkedin size={24} />
             </a>
@@ -79,8 +84,8 @@ const Team = () => {
             <a href="mailto:jane@totle.com" className="text-gray-700 hover:text-red-500 transition">
               <FaEnvelope size={24} />
             </a>
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div>
 
         {/* Team Member 3 */}
         {/* <div
@@ -111,11 +116,20 @@ const Team = () => {
           </div> */}
         {/* </div> */}
       </div>
-      <footer className="bg-gray-900 text-gray-400 py-8 mt-14 text-center">
-        <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
-        <div className="mt-4 flex justify-center space-x-6">
-          <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
-          <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
+      <footer className="bg-gray-900 text-gray-400 py-8 px-8 mt-14 flex items-center justify-between gap-4">
+        <div className="">
+          <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
+          <div className="mt-4 flex justify-center space-x-6">
+            <NavLink className="hover:text-white transition">Privacy Policy</NavLink>
+            <NavLink to='/contact' onClick={handleLinkClick} className="hover:text-white transition">Contact Us</NavLink>
+          </div>
+        </div>
+        <div>
+          <h4 className='mb-2'>Follow us on</h4>
+          <div className='flex gap-4 items-center justify-start'>
+            <FaLinkedin />
+            <FaTwitter />
+          </div>
         </div>
       </footer>
     </section>
