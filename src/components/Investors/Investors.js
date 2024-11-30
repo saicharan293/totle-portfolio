@@ -249,9 +249,8 @@ const Investors = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Interested in learning more about TOTLE and exploring potential
-          investment opportunities? Reach out to us by filling in the form below
-          or contacting us directly.
+          Reach out to us by filling in the form below
+          or contacting us directly on +91 <strong>9381281438</strong>.
         </p>
         {/* Contact Form */}
         <form
