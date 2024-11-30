@@ -93,7 +93,7 @@ const Team = () => {
           data-aos="fade-up"
         >
           <img
-            src="/images/Nikhila.jpg"
+            src="/images/Nikhila2.png"
             alt="Nikhila Shawla"
             className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
 
