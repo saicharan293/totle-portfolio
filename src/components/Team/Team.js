@@ -33,7 +33,7 @@ const Team = () => {
           data-aos="fade-up"
         >
           <img
-            src="/images/sriragh.jpg"
+            src="/images/sriragh2.png"
             alt="Yashwanth Sriragh"
             className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
           />
@@ -63,12 +63,12 @@ const Team = () => {
         >
           <img
             src="/images/sriragh.jpg"
-            alt="Jane Smith"
+            alt="Sriragh Yashwanth"
             className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
 
             // className="rounded-full w-30 h-[896px] mx-auto mb-4 shadow-lg md:w-32 md:h-32 lg:w-40 lg:h-40" // Responsive dimensions
           />
-          <h3 className="text-xl font-bold">Jane Smith</h3>
+          <h3 className="text-xl font-bold">Sriragh Yaswanth</h3>
           <p className="text-blue-500">CTO</p>
           <p className="mt-2 text-gray-600">
             Jane leads our tech initiatives, with expertise in AI and machine learning.
