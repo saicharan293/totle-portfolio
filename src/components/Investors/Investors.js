@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos"; // for scroll animations
 import "aos/dist/aos.css";
 import { FaUsers, FaHandshake, FaLaptopCode } from "react-icons/fa"; // Icons
-import { FaLinkedin, FaTwitter } from "react-icons/fa"; // Icons for social media
+import { FaLinkedin, FaTwitter, FaInstagram, FaFacebookSquare } from "react-icons/fa"; // Icons for social media
 
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -311,6 +311,8 @@ const Investors = () => {
           <div className="flex gap-4 items-center justify-start">
             <FaLinkedin />
             <FaTwitter />
+            <FaInstagram />
+            <FaFacebookSquare />
           </div>
         </div>
       </footer>

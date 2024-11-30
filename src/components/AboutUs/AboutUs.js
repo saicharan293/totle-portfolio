@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import AOS from 'aos'; // For animations on scroll
-import { FaLinkedin, FaTwitter } from 'react-icons/fa'; // Icons for social media
+import { FaLinkedin, FaTwitter, FaInstagram, FaFacebookSquare } from 'react-icons/fa'; // Icons for social media
 import 'aos/dist/aos.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 
@@ -101,6 +101,8 @@ const AboutUs = () => {
           <div className='flex gap-4 items-center justify-start'>
             <FaLinkedin />
             <FaTwitter />
+            <FaInstagram />
+            <FaFacebookSquare />
           </div>
         </div>
       </footer>

@@ -3,7 +3,7 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify"; // Import toast components
 import "react-toastify/dist/ReactToastify.css"; // Import toast styles
-import { FaLinkedin, FaTwitter } from 'react-icons/fa'; // Icons for social media
+import { FaLinkedin, FaTwitter, FaInstagram, FaFacebookSquare } from 'react-icons/fa'; // Icons for social media
 
 
 const Contact = () => {
@@ -155,6 +155,8 @@ const Contact = () => {
           <div className='flex gap-4 items-center justify-start'>
             <FaLinkedin />
             <FaTwitter />
+            <FaInstagram />
+            <FaFacebookSquare />
           </div>
         </div>
       </footer>

@@ -3,7 +3,7 @@ import {  NavLink, useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaRobot, FaBrain, FaCodeBranch } from 'react-icons/fa'; // Icons for tech stack
-import { FaLinkedin, FaTwitter } from 'react-icons/fa'; // Icons for social media
+import { FaLinkedin, FaTwitter, FaInstagram, FaFacebookSquare } from 'react-icons/fa'; // Icons for social media
 
 
 const TechnologyInnovation = () => {
@@ -151,6 +151,8 @@ const TechnologyInnovation = () => {
           <div className='flex gap-4 items-center justify-start'>
             <FaLinkedin />
             <FaTwitter />
+            <FaInstagram />
+            <FaFacebookSquare />
           </div>
         </div>
       </footer>

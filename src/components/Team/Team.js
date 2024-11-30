@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'; // Icons for social media
+import { FaLinkedin, FaTwitter, FaEnvelope, FaInstagram, FaFacebookSquare } from 'react-icons/fa'; // Icons for social media
 import AOS from 'aos'; // for scroll animations
 import 'aos/dist/aos.css';
 import { NavLink, useNavigate } from 'react-router-dom';
@@ -102,7 +102,7 @@ const Team = () => {
           <h3 className="text-xl font-bold">Nikhila Shawla</h3>
           <p className="text-blue-500">Business Analyst</p>
           <p className="mt-2 text-gray-600">
-            Nikhila leads our tech initiatives, with expertise in AI and machine learning.
+          Nikhila leads our Business initiatives, bringing expertise in Business strategy and market analysis.
           </p>
           {/* Social Media Links */}
           <div className="flex justify-center mt-4 space-x-4">
@@ -132,6 +132,8 @@ const Team = () => {
           <div className='flex gap-4 items-center justify-start'>
             <FaLinkedin />
             <FaTwitter />
+            <FaInstagram />
+            <FaFacebookSquare />
           </div>
         </div>
       </footer>

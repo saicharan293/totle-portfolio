@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { FaLinkedin, FaTwitter } from 'react-icons/fa'; // Icons for social media
+import { FaLinkedin, FaTwitter, FaInstagram, FaFacebookSquare } from 'react-icons/fa'; // Icons for social media
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import Slider from 'react-slick';
@@ -125,6 +125,8 @@ const Home = () => {
           <div className='flex gap-4 items-center justify-start'>
             <FaLinkedin />
             <FaTwitter />
+            <FaInstagram />
+            <FaFacebookSquare />
           </div>
         </div>
       </footer>
