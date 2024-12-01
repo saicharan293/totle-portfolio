@@ -93,15 +93,12 @@ const Team = () => {
             src="/images/Nikhila2.png"
             alt="Nikhila Shawla"
             className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
-
-            // className="rounded-full w-30 h-[896px] mx-auto mb-4 shadow-lg md:w-32 md:h-32 lg:w-40 lg:h-40" // Responsive dimensions
           />
           <h3 className="text-xl font-bold">Nikhila Shawla</h3>
-          <p className="text-blue-500">Business Analyst</p>
+          <p className="text-blue-500">Business Development Analyst</p>
           <p className="mt-2 text-gray-600">
           Nikhila leads our Business initiatives, bringing expertise in Business strategy and market analysis.
           </p>
-          {/* Social Media Links */}
           <div className="flex justify-center mt-4 space-x-4">
             <a href="https://linkedin.com" className="text-gray-700 hover:text-blue-500 transition">
               <FaLinkedin size={24} />
