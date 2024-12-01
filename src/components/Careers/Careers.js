@@ -168,7 +168,7 @@ const Careers = () => {
       <section className="py-16 bg-gradient-to-r from-tangering to-orange-500 text-white">
         <div className="container mx-auto px-6">
           <h3 className="text-3xl font-semibold mb-6" data-aos="fade-up">
-            Why Work at TOTLE?
+            Why work at TOTLE?
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div data-aos="fade-up" data-aos-delay="200">

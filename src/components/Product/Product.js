@@ -114,7 +114,7 @@ const Product = () => {
             <div className="bg-white w-[388px] dark:bg-gray-800 p-6 rounded-lg shadow-lg mx-auto flex flex-col h-full" data-aos="fade-up" data-aos-delay="700">
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Step 4: AI Evaluation and Feedback</h3>
               <p className="text-gray-600 dark:text-gray-300 mt-2 flex-grow">
-                After each session, TOTLE’s AI evaluates the user's understanding and offers detailed feedback to both the student and future Bridgers.
+                After each session, TOTLE’s AI evaluates the user's understanding and offers detailed feedback to both the students and Bridgers.
               </p>
             </div>
 

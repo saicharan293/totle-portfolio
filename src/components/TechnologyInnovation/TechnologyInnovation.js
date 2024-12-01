@@ -70,7 +70,7 @@ const TechnologyInnovation = () => {
         {/* Infographics Section */}
         <section className="my-12">
   <h2 className="text-4xl font-semibold text-gray-800 dark:text-white mb-8" data-aos="fade-up" data-aos-delay="300">
-    How AI Powers TOTLE’s Learning Platform
+    How AI powers TOTLE’s Learning Platform
   </h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
     {/* Infographic 1 */}
@@ -82,7 +82,7 @@ const TechnologyInnovation = () => {
       />
       <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Personalized Learning Paths</h3>
       <p className="text-gray-600 dark:text-gray-300 mt-2 text-center">
-        Our AI creates customized learning paths based on each student’s individual needs and progress, optimizing their learning journey.
+        Our AI creates customized learning paths based on each student’s needs and progress, optimizing their learning journey.
       </p>
     </div>
 

@@ -26,7 +26,7 @@ const Team = () => {
       </h2>
 
       {/* Team Members Section */}
-      <div className="grid grid-cols-3 px-6 place-items-center">
+      <div className="grid grid-cols-2 px-6 place-items-center">
         {/* Team Member 1 */}
         <div
           className="w-full md:w-11/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
@@ -57,7 +57,7 @@ const Team = () => {
         </div>
 
         {/* Team Member 2 */}
-        <div
+        {/* <div
           className="w-full md:w-11/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
           data-aos="fade-up"
         >
@@ -65,15 +65,12 @@ const Team = () => {
             src="/images/sriragh.jpg"
             alt="Sriragh Yashwanth"
             className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
-
-            // className="rounded-full w-30 h-[896px] mx-auto mb-4 shadow-lg md:w-32 md:h-32 lg:w-40 lg:h-40" // Responsive dimensions
-          />
+            />
           <h3 className="text-xl font-bold">Sriragh Yaswanth</h3>
           <p className="text-blue-500">CTO</p>
           <p className="mt-2 text-gray-600">
             Yashwanth leads our tech initiatives, with expertise in AI and machine learning.
           </p>
-          {/* Social Media Links */}
           <div className="flex justify-center mt-4 space-x-4">
             <a href="https://linkedin.com" className="text-gray-700 hover:text-blue-500 transition">
               <FaLinkedin size={24} />
@@ -85,7 +82,7 @@ const Team = () => {
               <FaEnvelope size={24} />
             </a>
           </div>
-        </div>
+        </div> */}
 
         {/* Team Member 3 */}
         <div
