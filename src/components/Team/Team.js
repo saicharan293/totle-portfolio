@@ -26,7 +26,7 @@ const Team = () => {
       </h2>
 
       {/* Team Members Section */}
-      <div className="grid grid-cols-2 px-6 place-items-center">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-6 px-6 place-items-center">
         {/* Team Member 1 */}
         <div
           className="w-full md:w-11/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
@@ -35,7 +35,7 @@ const Team = () => {
           <img
             src="/images/sriragh2.png"
             alt="Yashwanth Sriragh"
-            className="rounded-2xl mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
+            className="rounded-2xl h-40 max-w-48 mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
           />
           <h3 className="text-xl font-bold">Yashwanth Sriragh</h3>
           <p className="text-tangering">Founder</p>
@@ -64,7 +64,7 @@ const Team = () => {
           <img
             src="/images/manohar.jpeg"
             alt="Manohar"
-            className="rounded-2xl mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
+            className="rounded-2xl h-40 max-w-48 mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
             />
           <h3 className="text-xl font-bold">Manohar</h3>
           <p className="text-blue-500">Co-Founder</p>
@@ -113,7 +113,7 @@ const Team = () => {
         </div> */}
         
       </div>
-      <footer className="bg-gray-900 text-gray-400 py-8 px-8 mt-14 flex items-center justify-between gap-4">
+      <footer className="bg-gray-900 text-gray-400 py-8 px-8 mt-14 md:flex items-center justify-between gap-4">
         <div className="">
           <p>&copy; {new Date().getFullYear()} TOTLE. All rights reserved.</p>
           <div className="mt-4 flex justify-center space-x-6">
@@ -123,7 +123,7 @@ const Team = () => {
         </div>
         <div>
           <h4 className='mb-2'>Follow us on</h4>
-          <div className='flex gap-4 items-center justify-start'>
+          <div className='flex gap-4 items-center md:justify-start justify-center'>
             <FaLinkedin />
             <FaTwitter />
             <FaInstagram />
