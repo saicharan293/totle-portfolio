@@ -35,7 +35,7 @@ const Team = () => {
           <img
             src="/images/sriragh2.png"
             alt="Yashwanth Sriragh"
-            className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
+            className="rounded-2xl mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
           />
           <h3 className="text-xl font-bold">Yashwanth Sriragh</h3>
           <p className="text-tangering">Founder</p>
@@ -57,35 +57,35 @@ const Team = () => {
         </div>
 
         {/* Team Member 2 */}
-        {/* <div
+        <div
           className="w-full md:w-11/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
           data-aos="fade-up"
         >
           <img
-            src="/images/sriragh.jpg"
-            alt="Sriragh Yashwanth"
-            className="rounded-full mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
+            src="/images/manohar.jpeg"
+            alt="Manohar"
+            className="rounded-2xl mx-auto mb-4 shadow-lg md:w-30 md:h-28 lg:max-w-44 lg:h-40" // Responsive dimensions
             />
-          <h3 className="text-xl font-bold">Sriragh Yaswanth</h3>
-          <p className="text-blue-500">CTO</p>
+          <h3 className="text-xl font-bold">Manohar</h3>
+          <p className="text-blue-500">Co-Founder</p>
           <p className="mt-2 text-gray-600">
-            Yashwanth leads our tech initiatives, with expertise in AI and machine learning.
+          With extensive expertise in customer support and a proven ability to oversee operations, ensuring seamless and timely execution.
           </p>
           <div className="flex justify-center mt-4 space-x-4">
-            <a href="https://linkedin.com" className="text-gray-700 hover:text-blue-500 transition">
+            <a href="https://www.linkedin.com/in/manohar-jannala-9b49131b4" rel="noopener noreferrer" target="_blank" className="text-gray-700 hover:text-blue-500 transition">
               <FaLinkedin size={24} />
             </a>
             <a href="https://twitter.com" className="text-gray-700 hover:text-blue-400 transition">
               <FaTwitter size={24} />
             </a>
-            <a href="mailto:jane@totle.com" className="text-gray-700 hover:text-red-500 transition">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jannalamanohar@gmail.com" rel="noopener noreferrer" target="_blank" className="text-gray-700 hover:text-red-500 transition">
               <FaEnvelope size={24} />
             </a>
           </div>
-        </div> */}
+        </div>
 
         {/* Team Member 3 */}
-        <div
+        {/* <div
           className="w-full md:w-11/12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
           data-aos="fade-up"
         >
@@ -110,7 +110,7 @@ const Team = () => {
               <FaEnvelope size={24} />
             </a>
           </div>
-        </div>
+        </div> */}
         
       </div>
       <footer className="bg-gray-900 text-gray-400 py-8 px-8 mt-14 flex items-center justify-between gap-4">
