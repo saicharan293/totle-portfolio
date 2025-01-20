@@ -301,11 +301,27 @@ const Careers = () => {
         </div>
         <div>
           <h4 className="mb-2">Follow us on</h4>
-          <div className="flex gap-4 items-center justify-start">
-            <FaLinkedin />
-            <FaTwitter />
-            <FaInstagram />
-            <FaFacebookSquare />
+          <div className='flex gap-4 items-center justify-start list-none'>
+            <li>
+              <a href="http://www.linkedin.com/in/totle-edu-3b0792347" target="_blank" rel="noreferrer">
+                <FaLinkedin />
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/TotleEdu" target="_blank" rel="noreferrer">
+                <FaTwitter />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/totle_edu/?next=%2F" target="_blank" rel="noreferrer">
+                <FaInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61572098313677" target="_blank" rel="noreferrer">
+                <FaFacebookSquare />
+              </a>
+            </li>
           </div>
         </div>
       </footer>
